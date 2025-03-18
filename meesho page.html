@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff3f6c;
+            padding: 15px;
+            color: white;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        .navbar ul li  {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .search-bar {
+            margin: 20px auto;
+            max-width: 500px;
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #ff3f6c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        .product img {
+            width: 100%;
+            height: 70%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            
+        }
+        .product img:hover{
+            transform: scale(1.03);
+
+        }
+
+
+
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+        }
+        .buy-btn, .cart-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn {
+            background-color: #ff3f6c;
+        }
+        .buy-btn:hover {
+            background-color: #e6325e;
+        }
+        .cart-btn {
+            background-color: #28a745;
+        }
+        .cart-btn:hover {
+            background-color: #218838;
+        }
+
+        .container1 {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+        .footer-section h3 {
+            border-bottom: 2px solid #ff3f6c;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+        .footer-section a {
+            color: #ff3f6c;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Meesho</div>
+        <ul>
+            <li>
+                <a href="https://www.flipkart.com/">Home</a>
+            </li>
+            <li>Products</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71nF7WE0XRL._AC_UY1100_.jpg" alt="Product 1">
+                <h3>Trendy Dress</h3>
+                <p>A stylish and comfortable dress perfect for any occasion.</p>
+                <p>Price: ₹40999</p>
+                <a class="buy-btn">Buy Now</a>
+                <a class="cart-btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/44/72/5b/44725bd3d668f13ab9bd0ac72e77c7eb.jpg" alt="Product 2">
+                <h3>Stylish Handbag</h3>
+                <p>Elegant and spacious handbag to carry all your essentials.</p>
+                <p>Price: ₹120000</p>
+                <a class="buy-btn">Buy Now</a>
+                <a class="cart-btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/BB/CV/SQ/SELLER-74573575/air-jordan-casual-shoes.jpg" alt="Product 3">
+                <h3>Casual Shoes</h3>
+                <p>Comfortable and trendy shoes for everyday wear.</p>
+                <p>Price: ₹119999</p>
+                <a class="buy-btn">Buy Now</a>
+                <a class="cart-btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410521454012/zV_Hzg_WhrQ-410521454012_1_1.jpg" alt="Product 4">
+                <h3>Fancy T-Shirt</h3>
+                <p>Premium quality shirt to enhance your wardrobe collection.</p>
+                <p>Price: ₹229599</p>
+                <a class="buy-btn">Buy Now</a>
+                <a class="cart-btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81vxWpPpgNL._AC_UF1000,1000_QL80_.jpg" alt="Phone 1">
+                <h3>Samsung</h3>
+                <p>Latest high-performance smartphone with cutting-edge features.</p>
+                <p>Price: ₹129099</p>
+                <a class="buy-btn">Buy Now</a>
+                <a class="cart-btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708678682/Croma%20Assets/Communication/Mobiles/Images/300823_0_qhq6qz.png" alt="Phone 2">
+                <h3>Iphone</h3>
+                <p>Affordable yet powerful smartphone with excellent battery life.</p>
+                <p>Price: ₹1 sale sale</p>
+                <a class="buy-btn">Buy Now</a>
+                <a class="cart-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container1">
+      
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Meesho is an Indian social e-commerce platform that connects and customers, enabling individuals and small businesses to start and grow their online businesses, particularly through social media channels.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a >Home</a></li>
+                    <li><a >Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Instragram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: support@meesho.com</p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Meesho. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
